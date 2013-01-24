@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:weightSum="1">
+	<RelativeLayout android:id="@+id/conversationList"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<ListView android:id="@id/android:list" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:drawSelectorOnTop="false"
+			android:scrollbars="vertical" />
+	</RelativeLayout>
+	
+	<RelativeLayout android:id="@+id/InnerRelativeLayout"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"	>
+		<Button android:text="@string/conversationSendButtonName"
+			android:id="@+id/conversationSendButton"
+			android:layout_alignParentRight="true" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+		</Button>
+		<EditText android:id="@+id/conversationMsgText"
+			android:layout_width="fill_parent" 
+			android:layout_toLeftOf="@id/conversationSendButton"
+			android:layout_height="wrap_content">			     
+			</EditText>
+	</RelativeLayout>
+	
+</RelativeLayout>

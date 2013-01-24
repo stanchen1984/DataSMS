@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SMSTest!</string>
+    <string name="app_name">Data SMS</string>
+    <string name="composeFirstBar">Enter the phone number of recipient</string>
+    <string name="composeSecondBar">Message Context</string>
+    <string name="composeSendMsgButtonName">Send Message</string>
+    <string name="aboutInformation">This is the about information</string>
+    <string name="homeMenuListDelete">Delete</string>
+    <string name="homeMenuListCompose">Compose</string>
+    <string name="homeMenuListSettings">Settings</string>
+    <string name="homeMenuListAbout">About</string>
+    <string name="homeTitle">Data SMS Application</string>
+    <string name="homeComposeButton">Compose</string>
+    <string name="conversationSendButtonName">Send</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="org.Stan.DataSMS" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="10" />
+
+	<application android:icon="@drawable/sms_icon" android:label="@string/app_name">
+		<activity android:name=".Home" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<receiver android:name=".DataSMSReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.DATA_SMS_RECEIVED" />
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.LAUNCHER" />
+				<data android:scheme="sms" />
+				<data android:host="localhost" />
+				<data android:port="1200" />
+			</intent-filter>
+		</receiver>
+
+		<activity android:name=".About"></activity>
+		<activity android:name=".DataSMSSender"></activity>
+		<activity android:name=".Conversation"></activity>
+
+	</application>
+
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip"
+	android:paddingTop="3dip"
+	android:paddingBottom="3dip"
+	>
+	<TextView android:id="@+id/home_list_account_name"
+	android:layout_height="match_parent"
+	android:layout_width="fill_parent"
+	android:textSize="18dip"/>
+	<TextView android:id="@+id/home_list_account_message"
+	android:layout_height="match_parent"
+	android:layout_width="fill_parent"
+	android:textSize="18dip"/>
+</LinearLayout>
